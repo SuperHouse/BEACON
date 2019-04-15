@@ -3,7 +3,7 @@
 <eagle version="9.0.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -146,12 +146,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="5V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -159,18 +153,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V">
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -4006,16 +3988,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </class>
 </classes>
 <parts>
-<part name="C1" library="freetronics" deviceset="CAP" device="0603" value="100nF 0603"/>
 <part name="U$4" library="freetronics-original" deviceset="FIDUCIAL" device="1X2.5"/>
 <part name="U$5" library="freetronics-original" deviceset="FIDUCIAL" device="1X2.5"/>
-<part name="C2" library="freetronics-jon" deviceset="C-EU" device="C0805" value="10uF 0805"/>
-<part name="LED3" library="freetronics-2" deviceset="LED" device="3MM" value="GREEN 3mm"/>
-<part name="R17" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="470R 0603"/>
+<part name="LED1" library="freetronics-2" deviceset="LED" device="3MM" value="GREEN 3mm"/>
+<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="470R"/>
 <part name="IC1" library="freetronics-jon" deviceset="SPARKCORE" device=""/>
-<part name="U$3" library="SparkFun" deviceset="5V" device=""/>
-<part name="LED1" library="freetronics-2" deviceset="LED" device="3MM" value="IR 3mm"/>
-<part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="100R 0603"/>
+<part name="LED2" library="freetronics-2" deviceset="LED" device="3MM" value="IR 3mm"/>
+<part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="100R"/>
 <part name="IC2" library="freetronics-jon" deviceset="TX-C1" device="FLAT"/>
 <part name="IC3" library="freetronics-jon" deviceset="RXB1SHORT" device="FLAT"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
@@ -4024,24 +4003,22 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="P+2" library="freetronics-original" deviceset="VCC" device=""/>
 <part name="P+3" library="freetronics-original" deviceset="VCC" device=""/>
 <part name="GND6" library="freetronics" deviceset="GND" device=""/>
-<part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K 0603"/>
-<part name="R5" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K 0603"/>
+<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K"/>
+<part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="JP1" library="freetronics-original" deviceset="M01" device="PTH"/>
 <part name="JP2" library="freetronics-original" deviceset="M01" device="PTH"/>
-<part name="T1" library="opto-trans-siemens" deviceset="BPX81" device=""/>
+<part name="Q1" library="opto-trans-siemens" deviceset="BPX81" device=""/>
 <part name="GND7" library="freetronics" deviceset="GND" device=""/>
-<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K 0603"/>
+<part name="R5" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="P+4" library="freetronics-original" deviceset="VCC" device=""/>
 <part name="PIEZO1" library="freetronics-master-v1" deviceset="BUZZER" device="SMD12X12"/>
 <part name="GND8" library="freetronics" deviceset="GND" device=""/>
 <part name="PIEZO2" library="freetronics-jon" deviceset="PIEZOPOLARISED" device=""/>
 <part name="GND9" library="freetronics" deviceset="GND" device=""/>
 <part name="GND10" library="freetronics" deviceset="GND" device=""/>
-<part name="U$2" library="SparkFun" deviceset="5V" device=""/>
 <part name="P+5" library="freetronics-original" deviceset="VCC" device=""/>
-<part name="GND1" library="freetronics" deviceset="GND" device=""/>
-<part name="C3" library="freetronics" deviceset="CAP" device="0603" value="100nF 0603"/>
-<part name="C4" library="freetronics-jon" deviceset="C-EU" device="C0805" value="10uF 0805"/>
+<part name="C2" library="freetronics" deviceset="CAP" device="0603" value="100nF"/>
+<part name="C1" library="freetronics-jon" deviceset="C-EU" device="C0805" value="10uF"/>
 <part name="GND2" library="freetronics" deviceset="GND" device=""/>
 <part name="S1" library="freetronics-original" deviceset="TAC_SWITCH" device="PTH" value="SETUP"/>
 <part name="GND3" library="freetronics" deviceset="GND" device=""/>
@@ -4050,8 +4027,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <sheet>
 <plain>
 <text x="149.86" y="12.7" size="3.048" layer="94">SuperHouse IR/RF Beacon</text>
-<text x="193.04" y="6.858" size="1.778" layer="94">SKU: IRBEACON</text>
-<text x="215.9" y="6.858" size="1.778" layer="94">V1.0 (3-Jan-2016)</text>
+<text x="193.04" y="6.858" size="1.778" layer="94">SKU: BEACON</text>
+<text x="215.9" y="6.858" size="1.778" layer="94">V1.0 (18-Jul-2018)</text>
 <text x="149.606" y="6.858" size="1.778" layer="94">www.superhouse.tv/beacon</text>
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <frame x1="147.32" y1="5.08" x2="243.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
@@ -4059,8 +4036,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <frame x1="213.36" y1="5.08" x2="243.84" y2="10.16" columns="8" rows="5" layer="94"/>
 <text x="147.32" y="27.94" size="1.778" layer="97">D0: IR Receiver
 D1: IR Transmitter
-D2: RF Receiver
-D3: RF Transmitter
+D2: 433MHz RF Receiver
+D3: 433MHz RF Transmitter
 D4: Activity LED (green)
 D5: Setup button (active low)
 A0: Piezo</text>
@@ -4082,26 +4059,20 @@ A0: Piezo</text>
 <text x="78.74" y="50.8" size="1.778" layer="94">I/R Receiver</text>
 <text x="78.74" y="76.2" size="1.778" layer="94">I/R Transmitter</text>
 <wire x1="137.16" y1="81.28" x2="137.16" y2="106.68" width="0.3048" layer="97" style="longdash"/>
+<text x="147.32" y="20.32" size="1.778" layer="97">VCC = 3.3V from Particle Photon</text>
+<text x="111.76" y="33.02" size="1.778" layer="97">NPN I/R
+Phototransistor</text>
 </plain>
 <instances>
-<instance part="C1" gate="G$1" x="205.74" y="147.32" smashed="yes">
-<attribute name="NAME" x="206.121" y="153.416" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="206.121" y="145.796" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="U$4" gate="G$1" x="238.76" y="22.86"/>
 <instance part="U$5" gate="G$1" x="233.68" y="22.86"/>
-<instance part="C2" gate="G$1" x="195.58" y="147.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="195.961" y="153.416" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="195.961" y="145.796" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="LED3" gate="G$1" x="114.3" y="93.98" smashed="yes" rot="R90">
+<instance part="LED1" gate="G$1" x="114.3" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="112.268" y="95.504" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.268" y="97.663" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="101.6" y="93.98"/>
+<instance part="R2" gate="G$1" x="101.6" y="93.98"/>
 <instance part="IC1" gate="G$1" x="86.36" y="149.86"/>
-<instance part="U$3" gate="G$1" x="109.22" y="167.64"/>
-<instance part="LED1" gate="G$1" x="114.3" y="68.58" smashed="yes" rot="R90">
+<instance part="LED2" gate="G$1" x="114.3" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="112.268" y="70.104" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.268" y="72.263" size="1.778" layer="96"/>
 </instance>
@@ -4114,13 +4085,13 @@ A0: Piezo</text>
 <instance part="P+2" gate="1" x="38.1" y="81.28"/>
 <instance part="P+3" gate="1" x="35.56" y="25.4"/>
 <instance part="GND6" gate="1" x="66.04" y="119.38"/>
-<instance part="R4" gate="G$1" x="33.02" y="73.66"/>
-<instance part="R5" gate="G$1" x="30.48" y="17.78"/>
+<instance part="R1" gate="G$1" x="33.02" y="73.66"/>
+<instance part="R4" gate="G$1" x="30.48" y="17.78"/>
 <instance part="JP1" gate="G$1" x="40.64" y="45.72" rot="R270"/>
 <instance part="JP2" gate="G$1" x="43.18" y="96.52" rot="R270"/>
-<instance part="T1" gate="1" x="106.68" y="38.1"/>
+<instance part="Q1" gate="1" x="106.68" y="38.1"/>
 <instance part="GND7" gate="1" x="109.22" y="12.7"/>
-<instance part="R1" gate="G$1" x="109.22" y="22.86" rot="R90"/>
+<instance part="R5" gate="G$1" x="109.22" y="22.86" rot="R90"/>
 <instance part="P+4" gate="1" x="109.22" y="45.72"/>
 <instance part="PIEZO1" gate="G$1" x="149.86" y="162.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="154.94" y="154.94" size="1.778" layer="95" rot="R180"/>
@@ -4129,14 +4100,12 @@ A0: Piezo</text>
 <instance part="PIEZO2" gate="G$1" x="160.02" y="160.02"/>
 <instance part="GND9" gate="1" x="124.46" y="63.5"/>
 <instance part="GND10" gate="1" x="124.46" y="88.9"/>
-<instance part="U$2" gate="G$1" x="200.66" y="157.48"/>
 <instance part="P+5" gate="1" x="223.52" y="157.48"/>
-<instance part="GND1" gate="1" x="200.66" y="137.16"/>
-<instance part="C3" gate="G$1" x="228.6" y="147.32" smashed="yes">
+<instance part="C2" gate="G$1" x="228.6" y="147.32" smashed="yes">
 <attribute name="NAME" x="228.981" y="153.416" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="228.981" y="145.796" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C4" gate="G$1" x="218.44" y="147.32" smashed="yes" rot="R180">
+<instance part="C1" gate="G$1" x="218.44" y="147.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="218.821" y="153.416" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="218.821" y="145.796" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -4147,25 +4116,6 @@ A0: Piezo</text>
 <busses>
 </busses>
 <nets>
-<net name="5V" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="VIN"/>
-<wire x1="101.6" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="134.62" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="152.4" x2="195.58" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="154.94" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="154.94" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="5V"/>
-<wire x1="200.66" y1="157.48" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
-<junction x="200.66" y="154.94"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND@2"/>
@@ -4195,7 +4145,7 @@ A0: Piezo</text>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="17.78" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4211,34 +4161,23 @@ A0: Piezo</text>
 </segment>
 <segment>
 <wire x1="119.38" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="124.46" y1="93.98" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="119.38" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="68.58" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="144.78" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="142.24" x2="200.66" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="142.24" x2="195.58" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="200.66" y1="142.24" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
-<junction x="200.66" y="142.24"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="144.78" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="218.44" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="142.24" x2="223.52" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="144.78" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
 <junction x="223.52" y="142.24"/>
@@ -4257,13 +4196,13 @@ A0: Piezo</text>
 <net name="N$1" class="0">
 <segment>
 <wire x1="111.76" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 </segment>
@@ -4292,17 +4231,17 @@ A0: Piezo</text>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="T1" gate="1" pin="C"/>
+<pinref part="Q1" gate="1" pin="C"/>
 <pinref part="P+4" gate="1" pin="VCC"/>
 <wire x1="109.22" y1="45.72" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="152.4" x2="218.44" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="154.94" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="VCC"/>
 <wire x1="223.52" y1="154.94" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="154.94" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
 <junction x="223.52" y="154.94"/>
@@ -4315,8 +4254,8 @@ A0: Piezo</text>
 <label x="50.8" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T1" gate="1" pin="E"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="Q1" gate="1" pin="E"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="27.94" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="30.48" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
@@ -4343,7 +4282,7 @@ A0: Piezo</text>
 <label x="50.8" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
 <label x="15.24" y="17.78" size="1.778" layer="95"/>
 </segment>
@@ -4356,7 +4295,7 @@ A0: Piezo</text>
 </segment>
 <segment>
 <wire x1="27.94" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <label x="15.24" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -4367,7 +4306,7 @@ A0: Piezo</text>
 <label x="50.8" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <label x="81.28" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -4390,13 +4329,13 @@ A0: Piezo</text>
 <segment>
 <pinref part="IC2" gate="G$1" pin="DATA"/>
 <wire x1="45.72" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="DATA1"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
